@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.cdk-overlay-pane {
+  max-width: 80vw !important;
+  width: 35vw !important;
+}
+
+.ant-select-dropdown {
+  width: 93%;
+}
+
+.success-snackbar {
+  background: #4f9106;
+  color: white;
+}

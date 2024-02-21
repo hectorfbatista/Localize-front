@@ -1,0 +1,23 @@
+<h1 mat-dialog-title>Novo Cliente</h1>
+
+<div mat-dialog-content>
+  <form [formGroup]="form">
+    <mat-form-field class="full-width" appearance="outline">
+      <mat-label>Nome</mat-label>
+      <input matInput formControlName="name">
+    </mat-form-field>
+    <mat-form-field class="full-width" appearance="outline">
+      <mat-label>Telefone</mat-label>
+      <input matInput formControlName="tel">
+    </mat-form-field>
+    <mat-form-field class="full-width" appearance="outline">
+      <mat-label>E-mail</mat-label>
+      <input type="email" matInput formControlName="email">
+    </mat-form-field>
+  </form>
+</div>
+
+<div mat-dialog-actions class="justify-content-end">
+  <button mat-button (click)="onNoClick()">Cancelar</button>
+  <button mat-button [mat-dialog-close]="form.value" cdkFocusInitial>Criar</button>
+</div>

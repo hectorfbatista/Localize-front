@@ -1,0 +1,17 @@
+<div class="row mb-4">
+  <div class="col-md">
+    <h1 class="h2 border-left pl-2">
+      {{ pageTitle }}
+    </h1>
+  </div>
+  <div *ngIf="showSearch" class="col-md text-right">
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <div class="input-group-text">
+          <i class="bi bi-search"></i>
+        </div>
+      </div>
+      <input type="search" class="form-control" [placeholder]="searchText" aria-label="Pesquisar" (input)="onSearch($event)">
+    </div>
+  </div>
+</div>

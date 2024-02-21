@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    margin: 20px 30px 0px 0px;
+    align-items: baseline;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    width: 18rem;
+}
+
+.title, .text, .button {
+    margin-left: 20px;
+}
+
+.img {
+    width: 90%;
+}
+
+.title {
+    color: black;
+    width: 100px;
+    font-size: 20px;
+}
+
+.button {
+    text-decoration: blue;
+}

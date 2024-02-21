@@ -1,0 +1,35 @@
+<app-page-header
+  page-title="Clientes"
+  search-text="Procurar cliente"
+  (search)="applyFilter($event)">
+</app-page-header>
+
+<div class="d-flex justify-content-end m-2"><button (click)="criarCliente()" class="btn btn-outline-info btn-md">+ Novo Cliente</button></div>
+
+
+<table mat-table [dataSource]="dataSource" matSort>
+
+  <ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef> Nome </th>
+    <td mat-cell *matCellDef="let cliente"> {{cliente.name}} </td>
+  </ng-container>
+  <ng-container matColumnDef="description">
+    <th mat-header-cell *matHeaderCellDef> Telefone </th>
+    <td mat-cell *matCellDef="let cliente"> {{cliente.tel}} </td>
+  </ng-container>
+  <ng-container matColumnDef="amount">
+    <th mat-header-cell *matHeaderCellDef> Email </th>
+    <td mat-cell *matCellDef="let cliente"> {{cliente.email}} </td>
+  </ng-container>
+  <ng-container matColumnDef="acoes">
+    <th mat-header-cell *matHeaderCellDef> Ações </th>
+    <td mat-cell *matCellDef="let cliente">
+      <button (click)="excluirCliente(cliente)" class="btn btn-outline-info btn-sm">Excluir</button>
+    </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+
+<mat-paginator *ngIf="dataSource?.data?.length" [pageSizeOptions]="[5, 10, 20]"showFirstLastButtons></mat-paginator>

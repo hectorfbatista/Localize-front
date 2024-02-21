@@ -1,0 +1,17 @@
+table {
+  width: 100%;
+}
+
+.mat-header-row {
+  background-color: #007bff!important;
+}
+
+.mat-header-cell {
+  color: white !important;
+  font-size: 16px !important;
+}
+
+.mat-header-row th:last-child,
+.mat-row td:last-child {
+  text-align: center;
+}
