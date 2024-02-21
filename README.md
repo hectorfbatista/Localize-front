@@ -10,3 +10,7 @@ Para rodar o projeto utilize `npm install`, `npm install -g @angular/cli@latest`
 
 Utilize `ng build` para buildar o projeto. O arquivo de build fica disponível no directório `dist/`.
 
+## Login
+
+Para logar utilize o email: hectorfbatista@gmail.com e senha:projeto.
+
