@@ -20,7 +20,7 @@ export class AppComponent implements OnInit {
     this.router.events
       .pipe(filter((event) => event instanceof NavigationEnd))
       .subscribe((route: any) => {
-        this.showNav = !route.url.includes('/login');
+        this.showNav = !route.urlAfterRedirects.includes('/login');
       });
   }
 }
