@@ -4,7 +4,7 @@ Este projeto é para o trabalho final da disciplina Laborátorio de desenvolvime
 
 ## Development server
 
-Para rodar o projeto utilize `npm install` e em seguida utilize `ng serve` para iniciar o projeto. Navegue para `http://localhost:4200/`.
+Para rodar o projeto utilize `npm install`, `npm install -g @angular/cli@latest` e em seguida utilize `ng serve` para iniciar o projeto. Navegue para `http://localhost:4200/`.
 
 ## Build
 
